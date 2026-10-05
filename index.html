@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Bộ sưu tập ảnh tương tác (Accessible Photo Gallery)</h1>
+
+    <!-- Khối hiển thị ảnh lớn / thông tin chi tiết -->
+    <div id="image">
+        Rê chuột hoặc nhấn phím Tab để chọn một hình ảnh bên dưới.
+    </div>
+
+    <!-- Danh sách 6 hình ảnh mẫu -->
+    <div class="gallery">
+        <!-- 
+          Yêu cầu 2: 6 hình ảnh với văn bản thay thế (alt) rõ ràng[span_1](start_span)[span_1](end_span)
+          Yêu cầu 6: Giữ nguyên onmouseover, onmouseleave và THÊM onfocus, onblur[span_2](start_span)[span_2](end_span)
+        -->
+        <img class="preview" 
+             src="https://picsum.photos/id/10/300/200" 
+             alt="Cảnh rừng núi xanh tươi rợp bóng cây" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/20/300/200" 
+             alt="Góc làm việc hiện đại với máy tính và sổ tay" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/28/300/200" 
+             alt="Khung cảnh rừng núi trùng điệp lúc hoàng hôn" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/106/300/200" 
+             alt="Chú hoa cúc vàng rực rỡ rực nắng" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/103/300/200" 
+             alt="Chú cún nhỏ dễ thương ngồi trên đồng cỏ" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/111/300/200" 
+             alt="Cây cầu cũ bắc qua dòng sông yên bình" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+    </div>
+
+</body>
+</html>

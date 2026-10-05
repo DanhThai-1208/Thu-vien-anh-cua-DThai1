@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Khối hiển thị ảnh lớn */
+#image {
+    line-height: 300px;
+    width: 600px;
+    height: 300px;
+    border: 3px solid #333;
+    margin: 20px auto;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Thư viện ảnh thu nhỏ */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.preview {
+    width: 120px;
+    height: 90px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+/* Hiệu ứng khi Hover bằng chuột */
+.preview:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+/* Hiệu ứng làm nổi bật khi dùng bàn phím (Tab / Focus) */
+.preview:focus {
+    outline: 4px solid #ff9800; /* Đường viền cam rõ ràng hỗ trợ Accessibility */
+    transform: scale(1.05);
+}
